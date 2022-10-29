@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "allowJs": true,
+    "checkJs": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "ES6",
+    "types": ["node", "jest"]
+  },
+  "include": ["src/**/*"]
+}
