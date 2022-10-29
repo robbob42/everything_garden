@@ -1,11 +1,11 @@
 import {LitElement, html, css} from 'lit';
 import {customElement} from 'lit/decorators.js';
 
-@customElement('garden-body')
-export class GardenBody extends LitElement {
+@customElement('tab-basket')
+export class TabBasket extends LitElement {
     render() {
         return html`
-            <p><slot></slot></p>
+            <p>Basket goes here</p>
         `;
     }
 }
