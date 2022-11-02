@@ -1,4 +1,4 @@
-import './components/garden-container/garden-container';
+import './components/garden/garden-container';
 import { html, LitElement, css } from "lit";
 import { customElement } from "lit/decorators.js";
 
