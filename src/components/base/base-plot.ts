@@ -13,11 +13,14 @@ export class BasePlot extends LitElement {
         line-height: 50px;
         cursor: pointer;
         margin: auto;
+        padding-top: 13px;
       }
       `;
     render() {
         return html`
-            <div class="plot"></div>
+            <div class="plot">
+              <slot></slot>
+            </div>
         `;
     }
 }

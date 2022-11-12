@@ -63,6 +63,7 @@
   "dependencies": {
     "@cds/city": "^1.1.0",
     "@cds/core": "^5.6.1",
-    "lit": "^2.4.0"
+    "lit": "^2.4.0",
+    "tiny-timer": "^1.6.0"
   }
 }

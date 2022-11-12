@@ -1,5 +1,7 @@
 import {LitElement, html, css, nothing} from 'lit';
 import {customElement, state, property} from 'lit/decorators.js';
+import { initInventory } from '../../utils/utils';
+import Inventory from '../../classes/Inventory';
 import './garden-header';
 import './garden-body';
 import '../tabs/tab-main';
@@ -25,32 +27,8 @@ export class GardenContainer extends LitElement {
   @state()
   protected _selectedTab: string = "main";
 
-  @property()
-  inventory = {
-    seeds: [
-      {
-        key: 'navigation',
-        display: 'Navigation Seed',
-        productionTime: 5000,
-        outputs: {
-          features: {
-            navigation: {
-              productionAmount: 1
-            }
-          },
-          seeds: {
-            basket: {
-              productionAmount: 1
-            }
-          }
-        },
-        tooltip: {
-          body: 'Missing an Inventory?  This should do the trick!'
-        },
-        count: 1
-      }
-    ]
-  }
+  @property({type: Inventory})
+  inventory = initInventory();
 
   render() {
     return html`
